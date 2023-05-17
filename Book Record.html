@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Book Record</title>
+    <style>
+        #book {
+            text-align: left;
+            margin: 15px;
+        }
+        body {
+            margin: 20px;
+            background-color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 8px 12px;
+        }
+        .navbar_menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding-left: 0;
+        }
+        .navbar_inofrmation {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding-left: 0;
+        }
+        
+        .section_book_author_time {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding-left: 0;
+        }
+        .section_book_author_time li {
+            padding: 8px 5px;
+        }
+        .navbar_menu li {
+            padding: 8px 20px;
+        }
+        .navbar_inofrmation li {
+            padding: 8px 10px;
+        }
+        .navbar_menu a,.navbar_inofrmation a {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="book">Book Record</h1>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar_menu">
+            <li><a href="my record.html">내 기록</a></li>
+            <li><a href="another record.html">다른 사람들의 기록</a></li>
+            <li><a href="grade.html">평점 보기</a></li>
+            <li><a href="a recommended book.html">추천 책</a></li>
+            <li><a href="a recommended movie.html">영화 추천(소설 원작)</a></li>
+        </ul>
+        <ul class="navbar_inofrmation">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="today_record">
+            <ul class ="section_book_author_time">
+                <li><a href="#">책 제목</a></li>
+                <li><a href="#">저자</a></li>
+                <li><a href="#">날짜</a></li>
+            </ul>
+            <input type="text" placeholder="오늘의 기록" style="width:850px; height:150px;">
+        </div>
+        <div>
+
+        </div>
+    </section>
+</body>
+
+</html>
