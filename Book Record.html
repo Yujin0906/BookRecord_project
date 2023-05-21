@@ -50,6 +50,47 @@
         .navbar_menu a,.navbar_inofrmation a {
             color: white;
         }
+        .section_today_record{
+            display: inline;
+            margin: 0;
+            padding-left: 0;
+        }
+        .section_today_record{
+            display: grid;
+        }
+        .aside_search_and_box{
+            display: grid;
+        }
+        .aside_box{
+            width: 250px;
+            height: 400px;
+            background-color: gray;
+            margin: 10px;
+            padding: 40px;
+            border-radius: 5px;
+        }
+        .main_boxes{
+            display: grid;
+        }
+        .main_record_list{
+            width: 200px;
+            background-color: gray;
+            margin: 10px;
+            padding: 40px;
+            border-radius: 5px;
+        }
+        .main_another_record_list{
+            width: 550px;
+            background-color: gray;
+            margin: 10px;
+            padding: 40px;
+            border-radius: 5px;
+        }
+        .footer_box{
+            width: 900;
+            background-color: gray;
+        }
+        
     </style>
 </head>
 
@@ -61,9 +102,7 @@
         <ul class="navbar_menu">
             <li><a href="my record.html">내 기록</a></li>
             <li><a href="another record.html">다른 사람들의 기록</a></li>
-            <li><a href="grade.html">평점 보기</a></li>
             <li><a href="a recommended book.html">추천 책</a></li>
-            <li><a href="a recommended movie.html">영화 추천(소설 원작)</a></li>
         </ul>
         <ul class="navbar_inofrmation">
             <li><a href="#">로그인</a></li>
@@ -71,18 +110,59 @@
         </ul>
     </nav>
     <section>
-        <div class="today_record">
-            <ul class ="section_book_author_time">
-                <li><a href="#">책 제목</a></li>
-                <li><a href="#">저자</a></li>
-                <li><a href="#">날짜</a></li>
-            </ul>
-            <input type="text" placeholder="오늘의 기록" style="width:850px; height:150px;">
-        </div>
-        <div>
-
+        <div class="section_today_record">
+            <input type="text" placeholder="책 제목 / 저자 / 날짜" style="width:200px; height:18px;">
+            <div class="section_today_record2">
+                <input type="text" placeholder="오늘의 기록" style="width:850px; height:150px;">
+                <input type="button" id="save_button" value="저장">
+            </div>
         </div>
     </section>
+    <aside>
+        <div class="aside_search_and_box">
+            <div class="aside_search">
+                <input type="text" placeholder="Book Search" name="search">
+                <button type="submit">Submit</button>
+            </div>
+            
+            <div class="aside_box">
+                <h1>방금 올라온 기록들</h1>
+                <ol>
+                    <li>book title(nickname)</li>
+                    <li>book title(nickname)</li>
+                    <li>book title(nickname)</li>
+                    <li>book title(nickname)</li>
+                    <li>book title(nickname)</li>
+                </ol>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="main_boxes"></div>
+        <div class="main_record_list">
+            <h1>내 기록들</h1>
+                <ol>
+                    <li>book title</li>
+                    <li>book title</li>
+                    <li>book title</li>
+                    <li>book title</li>
+                    <li>book title</li>
+                </ol>
+        </div>
+        <div class="main_another_record_list">
+            <h1>다른 사람들의 공개된 독후감 기록들</h1>
+                <ol>
+                    <li>book title</li>
+                    <li>book title</li>
+                    <li>book title</li>
+                </ol>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_box">
+            <h1>오늘의 추천작</h1>
+        </div>
+    </footer>
 </body>
 
 </html>
