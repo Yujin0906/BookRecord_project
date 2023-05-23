@@ -32,13 +32,13 @@
             padding-left: 0;
         }
         
-        .section_book_author_time {
+        .main_book_author_time {
             list-style: none;
             display: flex;
             margin: 0;
             padding-left: 0;
         }
-        .section_book_author_time li {
+        .main_book_author_time li {
             padding: 8px 5px;
         }
         .navbar_menu li {
@@ -50,19 +50,21 @@
         .navbar_menu a,.navbar_inofrmation a {
             color: white;
         }
-        .section_today_record{
+        main{
+            width:1100px; height:500px; margin: 15px;
+        }
+        .main_today_record{
             display: inline;
             margin: 0;
             padding-left: 0;
-        }
-        .section_today_record{
             display: grid;
         }
+        
         .aside_search_and_box{
             display: grid;
         }
         .aside_box{
-            width: 250px;
+            width: 300px;
             height: 400px;
             background-color: gray;
             margin: 10px;
@@ -70,24 +72,31 @@
             border-radius: 5px;
         }
         .main_boxes{
-            display: grid;
+            display: flex;
         }
         .main_record_list{
-            width: 200px;
+            width: 300px;
             background-color: gray;
             margin: 10px;
             padding: 40px;
             border-radius: 5px;
         }
         .main_another_record_list{
-            width: 550px;
+            width: 800px;
             background-color: gray;
             margin: 10px;
             padding: 40px;
             border-radius: 5px;
         }
+        aside{
+            float: right; margin: 15px;
+        }
+        footer{
+            margin: 15px;
+        }
         .footer_box{
             width: 900;
+            height: 300;
             background-color: gray;
         }
         
@@ -109,15 +118,7 @@
             <li><a href="#">회원가입</a></li>
         </ul>
     </nav>
-    <section>
-        <div class="section_today_record">
-            <input type="text" placeholder="책 제목 / 저자 / 날짜" style="width:200px; height:18px;">
-            <div class="section_today_record2">
-                <input type="text" placeholder="오늘의 기록" style="width:850px; height:150px;">
-                <input type="button" id="save_button" value="저장">
-            </div>
-        </div>
-    </section>
+
     <aside>
         <div class="aside_search_and_box">
             <div class="aside_search">
@@ -138,7 +139,14 @@
         </div>
     </aside>
     <main>
-        <div class="main_boxes"></div>
+        <div class="main_today_record">
+            <input type="text" placeholder="책 제목 / 저자 / 날짜" style="width:200px; height:18px;">
+            <div class="main_today_record2">
+                <input type="text" placeholder="오늘의 기록" style="width:850px; height:150px;">
+                <input type="button" id="save_button" value="저장">
+            </div>
+        </div>
+        <div class="main_boxes">
         <div class="main_record_list">
             <h1>내 기록들</h1>
                 <ol>
@@ -157,6 +165,7 @@
                     <li>book title</li>
                 </ol>
         </div>
+    </div>
     </main>
     <footer>
         <div class="footer_box">
