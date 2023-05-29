@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+body {
+    width: 1450px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 8px 12px;
+}
+
+.navbar_menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+.navbar_inofrmation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+.main_book_author_time {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+}
+
+.main_book_author_time li {
+    padding: 8px 5px;
+}
+
+.navbar_menu li {
+    padding: 8px 20px;
+}
+
+.navbar_inofrmation li {
+    padding: 8px 10px;
+}
+
+.navbar_menu a,
+.navbar_inofrmation a {
+    color: white;
+}
+
+main {
+    width: 1100px;
+    height: 500px;
+    margin: 15px;
+}
+
+.main_today_record {
+    width: 1000px;
+    display: inline;
+    margin: 0;
+    padding-left: 0;
+    display: grid;
+}
+
+.main_boxes {
+    display: flex;
+}
+
+.main_record_list {
+    width: 300px;
+    background-color: gray;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.main_another_record_list {
+    width: 600px;
+    background-color: gray;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+aside {
+    float: right;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    background-color: gray;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+footer {
+    margin: 15px;
+    width: 900;
+    height: 300;
+    background-color: gray;
+}
